@@ -10,20 +10,20 @@
 
             // states for my app
             $stateProvider
-                .state('all articles', {
-                    url: '/articles',
-                    templateUrl: 'views/articles/list.html'
+                .state('all news', {
+                    url: '/news',
+                    templateUrl: 'views/news/list.html'
                 })
-                .state('create article', {
-                    url: '/articles/create',
-                    templateUrl: 'views/articles/create.html'
+                .state('create news item', {
+                    url: '/news/create',
+                    templateUrl: 'views/news/create.html'
                 })
-                .state('edit article', {
-                    url: '/articles/:articleId/edit',
-                    templateUrl: 'views/articles/edit.html'
+                .state('edit news item', {
+                    url: '/news/:newsItemId/edit',
+                    templateUrl: 'views/news/edit.html'
                 })
-                .state('article by id', {
-                    url: '/articles/:articleId',
+                .state('news item by id', {
+                    url: '/news/:newsItemId',
                     templateUrl: 'views/articles/view.html'
                 })
                 .state('all resources', {

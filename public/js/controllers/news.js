@@ -12,7 +12,7 @@
                     content: this.content
                 });
                 newsItem.$save(function(response) {
-                    $location.path('news/' + response._id);
+                    $location.path('news/' + response.id);
                 });
 
                 this.title = '';
